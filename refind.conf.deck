@@ -73,7 +73,7 @@ use_nvram false
 #
 #hideui singleuser
 #hideui all
-hideui singleuser,hints,arrows,labels,badges
+hideui singleuser,hints,arrows,label,badges
 
 # Set the name of a subdirectory in which icons are stored. Icons must
 # have the same names they have in the standard directory. The directory
@@ -712,6 +712,12 @@ menuentry "macOS via BootNext" {
     disabled
 }
 
+##
+# My Boot Entries
+# Don't change /EFI/refind/ part of the path. 
+# Even if specific Distro path to refind is /EFI/EFI/refind
+##
+
 menuentry "SteamOS" {
 	icon /EFI/refind/icons/os_steam.png
 	loader /EFI/steamos/steamcl.efi
@@ -723,3 +729,9 @@ menuentry "Fedora" {
 	loader /EFI/fedora/grubx64.efi
 	graphics on
 }
+
+#menuentry "EXAMPLE BOOT ENTRY" {
+#	icon /EFI/refind/icons/<DISTRO/OS Name>
+#	loader /EFI/<EFI FILE FOR YOUR DISTRO>
+#	graphics on
+#}
