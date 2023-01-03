@@ -1,6 +1,8 @@
 # Steam Deck rEFInd Installer
 
-![image info](./refind_screen.jpg)
+| ![image info](./refind_screen.jpg) |
+|:--:|
+| <b> Enjoy the shitty phone picture, looks better in person I swear </b> |
 
 Get a nice boot menu on your dual (or more) booted Steam Deck. This is mainly for me since I don't want to have to manually do this again. Feel free to use/modify if you find it helpful for you. Feel free to submit issues or pull requests or a message if something is weird or you need it more suited for your Distro, more than happy to help.
 
