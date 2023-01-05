@@ -73,7 +73,7 @@ use_nvram false
 #
 #hideui singleuser
 #hideui all
-hideui singleuser,hints,arrows,label,badges
+hideui singleuser,hints,arrows,badges
 
 # Set the name of a subdirectory in which icons are stored. Icons must
 # have the same names they have in the standard directory. The directory
