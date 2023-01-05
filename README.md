@@ -14,8 +14,10 @@ Get a nice boot menu on your dual (or more) booted Steam Deck. This is mainly fo
 ## Stuff to know if you use this
 Touchscreen, D-PAD, and Buttons work. I disabled Mouse support on this config file (personal preference) uncomment line 213 of the conf file if you want it enabled.
 
-I use Fedora, so you might need to edit `install.sh`, specifically line 29 to the correct flag (pacman doesn't use install) if you aren't using it. I might add it and just have it check for it, maybe, if I feel up to it.
+Additionally, `refind_config_location` might need a different directory path. I'm unsure if Ubuntu/Debian/Arch/(Insert Distro Here) uses a different path, the rEFInd RPM thats grabbed from SourceForge adds the 'refind' folder inside a created `efi` folder inside the `/boot/efi` folder (structure is `/boot/efi/efi/refind'), others might not.
 
-Additionally, `refind_config_location` might need a different directory path. I'm unsure if Ubuntu/Debian/Arch/(Insert Distro Here) uses a different path, rEFInd on Fedora adds the 'refind' folder inside a created `efi` folder inside the `/boot/efi` folder (structure is `/boot/efi/efi/refind'), others might not.
+Per the rEFInd site: package is not signed with a Secure Boot key, although if the `sbsigntool` (Debian, Ubuntu) or `sbsign` (Gentoo) package is installed, the installation scripts will generate and use their own Secure Boot keys and sign the binary with them.
+
+You'll want to add your Distro Icon, unless you want the default icons that come with a standard rEFInd.
 
 Check the bottom of the refind.conf.deck file and you'll see my boot menu entries. I included an example boot entry, but it's pretty straight forward. 
