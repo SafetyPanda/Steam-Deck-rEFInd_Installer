@@ -21,3 +21,6 @@ Per the rEFInd site: package is not signed with a Secure Boot key, although if t
 You'll want to add your Distro Icon, unless you want the default icons that come with a standard rEFInd.
 
 Check the bottom of the refind.conf.deck file and you'll see my boot menu entries. I included an example boot entry, but it's pretty straight forward. 
+
+## Issues?
+Firmware updates might cause this to break dumping you to GRUB.
